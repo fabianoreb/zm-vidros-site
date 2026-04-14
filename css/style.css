@@ -1117,3 +1117,17 @@ em { font-style: normal; color: var(--c-blue); }
   }
 
 }
+
+/* ===== CORREÇÃO NAVBAR MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: var(--navbar-h);
+  }
+
+  .hero {
+    min-height: calc(100svh - var(--navbar-h));
+  }
+
+}
