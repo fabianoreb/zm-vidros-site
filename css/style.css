@@ -1008,10 +1008,6 @@ em { font-style: normal; color: var(--c-blue); }
    ══════════════════════════════════════ */
 .hide-mobile { display: none; }
 
-@media (min-width: 768px) {
-  .hide-mobile { display: inline; }
-}
-
 @media (max-width: 1024px) {
   .diferenciais__grid { grid-template-columns: repeat(3, 1fr); }
   .regioes__cities { grid-template-columns: repeat(3, 1fr); }
