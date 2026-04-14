@@ -1096,3 +1096,8 @@ em { font-style: normal; color: var(--c-blue); }
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 768px) {
+  .hero__content {
+    padding-top: calc(var(--navbar-h) + 80px + env(safe-area-inset-top));
+  }
+}
