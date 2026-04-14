@@ -1101,10 +1101,9 @@ em { font-style: normal; color: var(--c-blue); }
     min-height: 100svh;
     padding-top: 0; /* REMOVE o conflito */
   }
-
-  .hero__content {
-    padding-top: calc(var(--navbar-h) + 100px + env(safe-area-inset-top));
-    padding-bottom: 100px;
+.hero__content {
+  padding-top: 40px;
+}
   }
 
   .hero__actions {
@@ -1115,8 +1114,6 @@ em { font-style: normal; color: var(--c-blue); }
     width: 100%;
     justify-content: center;
   }
-
-}
 
 /* ===== CORREÇÃO NAVBAR MOBILE ===== */
 
