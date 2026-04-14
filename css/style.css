@@ -1096,3 +1096,20 @@ em { font-style: normal; color: var(--c-blue); }
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== HERO MOBILE OTIMIZADO (FIX COMPLETO) ===== */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 110vh;
+  }
+
+  .hero__content {
+    padding-top: calc(var(--navbar-h) + 100px + env(safe-area-inset-top));
+    padding-bottom: 140px;
+  }
+
+  .hero__actions {
+    margin-top: 10px;
+  }
+}
+
