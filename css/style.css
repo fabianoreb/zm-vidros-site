@@ -1096,20 +1096,33 @@ em { font-style: normal; color: var(--c-blue); }
   opacity: 1;
   transform: translateY(0);
 }
-/* ===== HERO MOBILE OTIMIZADO (FIX COMPLETO) ===== */
+/* ===== HERO MOBILE FIX DEFINITIVO ===== */
 
 @media (max-width: 768px) {
+
+  /* Remove centralização que causa corte */
   .hero {
-    min-height: 110vh;
+    align-items: flex-start;
+    min-height: 100svh;
+    padding-top: 100px;
   }
 
+  /* Ajusta conteúdo respeitando navbar + notch */
   .hero__content {
-    padding-top: calc(var(--navbar-h) + 100px + env(safe-area-inset-top));
-    padding-bottom: 140px;
+    padding-top: calc(var(--navbar-h) + 40px + env(safe-area-inset-top));
+    padding-bottom: 80px;
   }
 
+  /* Dá mais respiro nos botões */
   .hero__actions {
-    margin-top: 10px;
+    margin-top: 16px;
   }
+
+  /* Garante que botões não quebrem layout */
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
 }
 
