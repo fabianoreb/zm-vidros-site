@@ -1098,6 +1098,7 @@ em { font-style: normal; color: var(--c-blue); }
 }
 @media (max-width: 768px) {
   .hero__content {
-    padding-top: calc(var(--navbar-h) + 80px + env(safe-area-inset-top));
+    padding-bottom: 120px;
   }
+}
 }
