@@ -1103,7 +1103,7 @@ em { font-style: normal; color: var(--c-blue); }
   }
 
   .hero__content {
-    padding-top: calc(var(--navbar-h) + 80px + env(safe-area-inset-top));
+    padding-top: calc(var(--navbar-h) + 100px + env(safe-area-inset-top));
     padding-bottom: 100px;
   }
 
