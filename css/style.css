@@ -1092,18 +1092,22 @@ em { font-style: normal; color: var(--c-blue); }
   opacity: 1;
   transform: translateY(0);
 }
-/* ===== HERO MOBILE FIX FINAL (VERSÃO CORRETA) ===== */
+/* ===== HERO + NAVBAR MOBILE FIX DEFINITIVO ===== */
 
 @media (max-width: 768px) {
 
+  body {
+    padding-top: var(--navbar-h);
+  }
+
   .hero {
     align-items: flex-start;
-    min-height: 100svh;
-    padding-top: 0; /* REMOVE o conflito */
+    min-height: calc(100svh - var(--navbar-h));
   }
-.hero__content {
-  padding-top: 40px;
-}
+
+  .hero__content {
+    padding-top: calc(40px + env(safe-area-inset-top));
+    padding-bottom: 100px;
   }
 
   .hero__actions {
@@ -1115,16 +1119,6 @@ em { font-style: normal; color: var(--c-blue); }
     justify-content: center;
   }
 
-/* ===== CORREÇÃO NAVBAR MOBILE ===== */
-
-@media (max-width: 768px) {
-
-  body {
-    padding-top: var(--navbar-h);
-  }
-
-  .hero {
-    min-height: calc(100svh - var(--navbar-h));
-  }
-
 }
+
+
